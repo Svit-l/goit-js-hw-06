@@ -26,7 +26,6 @@ button {
 /* =========== TASK-03 ========== */
 .gallery {
   list-style: none;
-  max-width: 1200px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +36,7 @@ button {
 .galary__item {
   margin-left: 15px;
   margin-top: 15px;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 45px) / 3);
 }
 
 .galary__img {
