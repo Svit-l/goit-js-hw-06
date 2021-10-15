@@ -4,8 +4,8 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -21,4 +21,26 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+/* =========== TASK-03 ========== */
+.gallery {
+  list-style: none;
+  max-width: 1200px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.galary__item {
+  margin-left: 15px;
+  margin-top: 15px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.galary__img {
+  max-width: 100%;
+  height: auto;
 }
