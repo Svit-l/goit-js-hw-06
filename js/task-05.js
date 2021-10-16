@@ -9,4 +9,4 @@ const handleInput = () => {
   return (output.textContent = "Anonymous");
 };
 
-document.addEventListener("input", handleInput);
+input.addEventListener("input", handleInput);

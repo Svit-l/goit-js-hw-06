@@ -1,24 +1,19 @@
-// Напиши скрипт, который при потере фокуса на инпуте(событие blur),
-//     проверяет его содержимое на правильное количество введённых символов.
+const validInput = document.querySelector("#validation-input[data-length]");
 
-// <input
-//   type="text"
-//   id="validation-input"
-//   data-length="6"
-//   placeholder="Please enter 6 symbols"
-// />
-// Сколько символов должно быть в инпуте, указывается в его атрибуте data-length.
-// Если введено подходящее количество символов, то border инпута становится зелёным, если неправильное - красным.
-// Для добавления стилей, используй CSS-классы valid и invalid, которые мы уже добавили в исходные файлы задания.
+const onBlur = () => {
+  if (Number(validInput.value.length) === Number(validInput.dataset.length)) {
+    return validInput.classList.add("valid");
+  }
+  if (Number(validInput.value.length) === 0) {
+    return;
+  }
+  return validInput.classList.add("invalid");
+};
 
-// #validation-input {
-//   border: 3px solid #bdbdbd;
-// }
+const onFocus = () => {
+  validInput.classList.remove("valid");
+  validInput.classList.remove("invalid");
+};
 
-// #validation-input.valid {
-//   border-color: #4caf50;
-// }
-
-// #validation-input.invalid {
-//   border-color: #f44336;
-// }
+validInput.addEventListener("blur", onBlur);
+validInput.addEventListener("focus", onFocus);
