@@ -25,16 +25,15 @@ button {
 
 /* =========== TASK-03 ========== */
 .gallery {
+  max-width: 600px;
   list-style: none;
-  padding: 10px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: -15px;
-  margin-left: -15px;
 }
 
 .galary__item {
-  margin-left: 15px;
   margin-top: 15px;
   flex-basis: calc((100% - 45px) / 3);
 }

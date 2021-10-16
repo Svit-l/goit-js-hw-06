@@ -6,15 +6,31 @@
 // <br />
 // <span id="text">Abracadabra!</span>
 
+// const inpuntFont = document.querySelector("input#font-size-control");
+// const spanText = document.querySelector("span#text");
+
+// console.log(inpuntFont);
+// console.log(spanText);
+
+// const handleInput = () => {
+//   spanText.style.fontSize = `${inpuntFont.value}px`;
+// };
+
+// inpuntFont.addEventListener("input", handleInput);
+
+// +++++++++ Способ 2
+
 const inpuntFont = document.querySelector("input#font-size-control");
 const spanText = document.querySelector("span#text");
 
-console.log(inpuntFont);
+console.log(inpuntFont.value);
+
 console.log(spanText);
 
-const handleInput = () => {
-  spanText.style.fontSize = `${inpuntFont.value}px`;
+const handleInput = (event) => {
+  spanText.style.fontSize = `${event.currentTurget.value}px`;
 };
+inpuntFont.addEventListener("input", handleInput);
 
 // +++++++++++ Пример
 // function handleInput() {
@@ -22,5 +38,3 @@ const handleInput = () => {
 //   const span = document.getElementById(spanText); //  - абзац
 //   span.value = range.value;
 // }
-
-inpuntFont.addEventListener("input", handleInput);

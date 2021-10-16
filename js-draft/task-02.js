@@ -39,14 +39,14 @@ const elements = ingredients.map((ingredient) => {
 list.append(...elements);
 
 // +++++++ Method-2
-const list = document.querySelector("#ingredients");
+// const list = document.querySelector("#ingredients");
 
-ingredients.forEach((ingredient) => {
-  let lastIngredient = document.createElement("li");
-  lastIngredient.textContent = ingredient;
-  lastIngredient.classList.add("item");
-  list.append(lastIngredient);
-});
+// ingredients.forEach((ingredient) => {
+//   let lastIngredient = document.createElement("li");
+//   lastIngredient.textContent = ingredient;
+//   lastIngredient.classList.add("item");
+//   list.append(lastIngredient);
+// });
 
 // +++++++ Method-3
 // const list = document.querySelector("#ingredients");
